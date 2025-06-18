@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Elias</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+        }
+        /*Cabeçalho começa na coluna 1 e termina ma 12 com cor de fundo preto*/
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: black;
+        }
+        /*centraliza o menu*/
+        .menu {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /*Inicia a imagem na coluna 1 e termina na 3*/
+        .imagem_Elias {
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+        }
+        /*Faz com que texo inicie na coluna 4 até a 12*/
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+
+        }
+         /*Rodapé inicia na coluna 1 até a 12 e centraliza*/
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        /*Reira o marcação de bolinhas*/
+        ul {
+            list-style-type: none;
+            color: #506E6A;
+        }
+
+        /*Está retirando p sublinhado*/
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #506E6A 1px;
+        }
+        /*Menu alinhado a esquerda*/
+        li {
+            float: left;
+            color: black;
+        }
+        /*Passando o mouse em cima deixa o menu cinza*/
+        a:hover {
+            background-color: gray;
+            color: blue;
+        }
+        </style>
+    </head>
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Elias Ribeiro Soares</h1>
+        <br>
+
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="trabalhos.html">Trabalhos</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <aside class="imagem_Elias">
+            <img src="Elias.png">
+            
+        </aside>
+        <section class="principal">
+            
+            <h1>
+                Por aqui você verá minha <span  style="color: green;">Formação</span>
+            </h1>
+            <div>
+                <h3>Minhas últimas formações são:</h3>
+                <ol>
+                    <li>Desde janeiro, estou mergulhando no universo do desenvolvimento de sistemas, fortalecendo minhas habilidades técnicas e construindo as bases para uma carreira promissora na área de tecnologia.</li>
+                    <br><br><br>
+                    <li>Desde março, venho aprofundando meus conhecimentos em lógica de programação e algoritmos, desenvolvendo meu raciocínio lógico e a capacidade de criar soluções eficientes e bem estruturadas.</li>
+                    <br><br><br>
+                    <li>Desde junho, venho explorando e aplicando ferramentas essenciais para o desenvolvimento web, adquirindo experiência prática e atualizada para construir aplicações modernas e funcionais.</li>
+                    <br><br><br>
+                </ol>
+            </div>
+
+        </section>
+    </div>
+    <footer style="clear: both;">
+        <div style="padding: 30px; background-color: #222121; color: white; font-size: larger;">
+               <table>
+                <tr><td><img src="whats.png">(XX) 9XXXX-XXXX       </td><td><td><a href="https://github.com/EliasRib/FDS.uninter1">Meus Contatos</a></td></td>
+                <tr><td><img src="mail.png">email@email.com.br</td></tr>
+                <tr><td></td><td></td><td>Layout desenvolvido para fins educacionais</td> </tr>
+               </table>
+            </div>
+    </footer>
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Elias</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+        }
+        /*Cabeçalho começa na coluna 1 e termina ma 12 com cor de fundo preto*/
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: black;
+        }
+        /*centraliza o menu*/
+        .menu {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /*Inicia a imagem na coluna 1 e termina na 3*/
+        .imagem_Elias {
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+        }
+        /*Faz com que texo inicie na coluna 4 até a 12*/
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+
+        }
+         /*Rodapé inicia na coluna 1 até a 12 e centraliza*/
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+         /*Reira o marcação de bolinhas*/
+        ul {
+            list-style-type: none;
+            color: #506E6A;
+        }
+        /*Está retirando p sublinhado*/
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #506E6A 1px;
+        }
+        /*Menu alinhado a esquerda*/
+        li {
+            float: left;
+            color: black;
+        }
+        /*Passando o mouse em cima deixa o menu cinza*/
+        a:hover {
+            background-color: gray;
+            color: blue;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Elias Ribeiro Soares</h1>
+        <br>
+
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="trabalhos.html">Trabalhos</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <aside class="imagem_Elias">
+            <img src="Elias.png">
+            
+        </aside>
+        <section class="principal">
+            <h3>Olá, Pessoal</h3>
+            <h1>
+                Eu sou <span  style="color: green;">Elias Ribeiro Soares</span>
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi repellat sequi sapiente nemo deserunt non
+                fugiat, accusamus voluptatum quasi dolorum commodi unde temporibus beatae facilis voluptate odit veniam
+                id
+                ducimus veritatis ex? Accusantium, delectus provident, nesciunt natus esse, neque labore nobis fugiat
+                reprehenderit quam eum ipsa consequuntur est. Distinctio aliquam pariatur corporis numquam in architecto
+                dicta quis exercitationem necessitatibus, repellat ex ipsa commodi soluta! Porro, qui odit? Dignissimos
+                nulla sed laudantium saepe adipisci quia. Reprehenderit, odio. Dolorem, perspiciatis. Quidem recusandae
+                optio officiis ducimus dolore architecto, ut sed enim unde, illum rerum vero ad vel labore saepe
+                quisquam?
+                Saepe sit, nihil ad asperiores eaque culpa, quae suscipit neque dolorum non quasi veritatis quisquam
+                minima
+                qui possimus vero sint nam architecto earum voluptatibus pariatur labore porro. Quod sed rerum iure
+                harum
+                quos eveniet, molestias explicabo corporis officia eos libero autem? Vel, minima blanditiis sapiente
+                officia
+                repudiandae, nam distinctio tempore consequatur culpa maiores facilis a modi dolorem saepe, commodi
+                aliquam.
+                Voluptatem suscipit, earum consequuntur dolores debitis maiores incidunt soluta alias nihil ratione? Ab
+                facere natus, doloremque hic consectetur commodi nobis veritatis beatae incidunt totam pariatur eius
+                assumenda odit molestias deleniti ratione vitae ullam cupiditate officiis obcaecati suscipit aut
+                nostrum.
+                Sit maxime adipisci dignissimos.</p>
+
+        </section>
+        
+    </div>
+    <section style="clear: both;">
+            <div style="background-color: #222121;">
+                <h1 style="color: white; margin-left: 35px;">contato</h1>
+            </div>
+        </section>
+     <section style="float: left; width: 50%;">
+            <form>
+                <br><br>
+                           <table>
+                
+                <tr>
+                    <th>Nome</th>
+                    <td><input type="text" size="08"></td>
+                </tr>
+                
+                <tr>
+                    <th>E-mail</th>
+                    <td><input type="email" size="08"></td>
+                </tr>
+                
+
+                <tr>
+                    <th>Fone</th>
+                    <td><input type="tel" size="3" placeholder="11-98745-1665"  pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required></td>
+                </tr>
+                
+
+                <tr>
+                    <th>Mensagem:</th>
+                    <td><textarea rows="5" cols="50"></textarea></td>
+                </tr>
+                
+
+                <tr>
+                    <th></th>
+                    <td><input type="submit" value="Enviar"></td>
+                </tr>
+            </table>
+            <br><br>
+        </form>
+        </section>
+    <footer style="clear: both;">
+        <div style="padding: 30px; background-color: #222121; color: white; font-size: larger;">
+               <table>
+                <tr><td><img src="whats.png">(XX) 9XXXX-XXXX        </td><td><td><a href="https://github.com/EliasRib/FDS.uninter1">Meus Contatos</a></td></td>
+                <tr><td><img src="mail.png">email@email.com.br</td></tr>
+                <tr><td></td><td></td><td>Layout desenvolvido para fins educacionais</td> </tr>
+               </table>
+            </div>
+    </footer>
+    </div>
+</body>
+
+</html>
